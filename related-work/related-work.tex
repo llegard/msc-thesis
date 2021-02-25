@@ -1,11 +1,16 @@
 \chapter{\label{chap:state-of-the-art}State of the Art}
-In this chapter we describe existing algorithms, protocols and applications in computer science, which try to solve, or give an alternative for, the centralized power in Big Tech, and more specifically in digital audio streaming. We inspect full solutions in the form of distributed applications, and techniques which solve subproblems, such as decentralized file sharing protocols.
+In this chapter we describe existing algorithms, protocols and applications in computer science, which try to address %solve, or give an alternative for, the centralized power in 
+centralizatoin of power with Big Tech, and more specifically in digital audio streaming. We inspect full solutions in the form of distributed applications, and techniques which solve subproblems, such as decentralized file sharing protocols.
 
-For an application to evolve in a fully distributed network, without a company or a single point of responsibility, decisions need to be made on protocol or feature additions and changes. We inspect the state-of-the-art technologies and organizational theories which enable autonomous communities to solve these problems by organizing themselves.
+For an application to evolve into a fully distributed network, without a company or a single point of responsibility, early decisions need to be made on the protocol, as well as on the feature additions and changes. We inspect the state-of-the-art technologies and organizational theories which enable autonomous communities to solve these problems through the self-organization.
 
 \section{Decentralized Autonomous Organizations}
-As an alternative organizational framework for distributing money and music, we examine a recent concept and technology: Decentralized Autonomous Organizations (DAO).
-A DAO is ``an entity that lives on the internet and exists autonomously, but also heavily relies on hiring individuals to perform certain tasks that the automaton itself cannot do''~\citep{buterin2014dao}. It is not owned by a single person or legal entity. It should also not require a specifically specified party to operate. For example, it should not depend on a single server or database, but rather have flexibility in adopting resources. As such we say it lives \textit{autonomously}. \cite{buterin2014dao} also notes that a DAO should have \textit{internal capital}: `some kind of internal property that is valuable in some way, and it has the ability to use that property as a mechanism for rewarding certain activities'. A DAO is non-profit by nature, as there is no legal owner of the system.
+As an alternative organizational framework for distributing money and music, we examine a recent technological concept: Decentralized Autonomous Organizations (DAO).
+A DAO is ``an entity that lives on the internet and exists autonomously, but also heavily relies on hiring individuals to perform certain tasks that the automaton itself cannot do''~\citep{buterin2014dao}. It is not owned by a single person or legal entity. It should also not require a designated trusted third party to operate. For example, it should not depend on a single server or database, but rather have flexibility in adopting resources, making it decentralized. It can also be indepndent from external regulatory frameworks making it autonomous, since all rules are implemented in code. 
+As such we say it lives \textit{autonomously}. \cite{buterin2014dao} also notes that a DAO should have \textit{internal capital}: `some kind of internal property that is valuable in some way, and it has the ability to use that property as a mechanism for rewarding certain activities'. %A DAO is non-profit by nature, as there is no legal owner of the system. 
+%A lot of DE-FI projects are for profit, and they also can be considered DAOs. 
+
+
 
 % Add Steemit example
 % Add The DAO example/add example of shared wallet system
@@ -24,7 +29,8 @@ One implementation of intelligent agents acting autonomously is CloudOMate~\cite
     \label{fig:ai-techniques}
 \end{figure}
 
-In our context, we envision human tasks to be e.g. (1) creating music and giving feedback on music (through e.g. donations), (2) making decisions on the subscription protocol and the payouts to artists, or (3) governing evolution of the software. 'Robot tasks' could be e.g. (1) processing an automatic subscription payment system, in which all user money is divided fairly over the artists every time iteration; Or (2) tracking connectivity stats of other users; Or (3) determining trust of authenticity and identity of artists.
+In our context, we envision human tasks to be e.g. (1) creating music and giving feedback on music (through e.g. donations), (2) making decisions on the subscription protocol and the payouts to artists, or (3) governing evolution of the software. 'Robot tasks' could be e.g. (1) processing an automatic subscription payment system, in which all user money is divided fairly over the artists every time iteration; Or (2) tracking connectivity stats of other users; Or (3) establishing and verifying identities of the artists.
+%determining trust of authenticity and identity of artists. 
 
 % Move to Design
 % Much is still unknown in this research area. This thesis aims to create more knowledge on a 'AI DAO' by attempting to build a proof-of-concept of such intelligent system.
@@ -58,7 +64,7 @@ Opus Audio~\citep{jia2016opus} is a decentralized music-sharing platform and pro
 
 Musicoin is a blockchain platform without intermediaries that focuses on income for independent artists. It uses smart contracts and cryptocurrency to show transparency in payments (see \ref{sec:smart-contracts}). This payment structure ensures that each contributor in the network is rewarded, and that artists receive a stable income based on the Universal Basic Income ideology. Not all of their architecture is decentralized; they use centralized registration system for artists and listeners. They pay artists using their \$MUSIC currency, of which the value may be higlhy volatile.
 
-None of the state-of-the-art decentralized audio streaming technologies show a running, fully decentralized infrastructure with stable income for artists. All of these systems have in common that they save metadata and identifiers of audio files on a blockchain, and save the audio files in an off-chain database using IPFS~\citep{benet2014ipfs}. This makes these solutions reliant on people voluntarily running IPFS content nodes (servers hosting the audio files). In a fully decentralized network, every participant should have the same role, meaning that every node both uploads and downloads content, and it should not be reliant on external servers. Most decentralized systems use their homebrew cryptocurrency to pay artists, instead of a stable currency.
+None of the state-of-the-art decentralized audio streaming technologies show a running, fully decentralized infrastructure with stable income for artists. All of these systems have one common design approach: they save metadata and identifiers of audio files on a blockchain, and save the audio files in an off-chain database using IPFS~\citep{benet2014ipfs}. This makes these solutions reliant on people voluntarily running IPFS content nodes (servers hosting the audio files). In a fully decentralized network, every participant should have the same role, meaning that every node both uploads and downloads content, and it should not be reliant on external servers. Most decentralized systems use their homebrew cryptocurrency to pay artists, instead of a stable currency.
 
 \section{Financial transparency in the music industry}
 \label{sec:smart-contracts}
